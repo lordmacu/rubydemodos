@@ -1,6 +1,16 @@
-
 <div class="jumbotron">
-  <h1>Hello, probando cosa</h1>
-  <p>...</p>
-  <p><%= link_to "Registrarse","#",{:class=>"btn btn-primary btn-lg"} %></p>
+	<% if user_signed_in? %>
+
+	<h1>Bienvenido</h1>
+
+	<% else %>
+	<h1>Ingresa aqui</h1>
+	<p>
+		<%= link_to "Registrarse",new_user_registration_path,{:class=>"btn btn-primary btn-lg"} %>
+	</p>
+
+	<% end %>
+	<p>
+		...
+	</p>
 </div>
