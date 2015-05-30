@@ -1,0 +1,19 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+$baseFontFamily: Oswald,Helvetica,sans-serif  !default;
+$baseFontSize: 11px !default;
+@navbar-default-color:red;
+
+body { font-family: $baseFontFamily, Arial, serif; font-weight: 400; }
+
+.footer{
+  background-color:gray;
+  a{
+    color:red
+  }
+}
